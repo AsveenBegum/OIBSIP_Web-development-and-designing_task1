@@ -1,0 +1,84 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1612771409641-b0478cab8b69?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid brown;
+            transition:0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .buy a{
+             text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: brown;
+            border-radius: 5px;
+            transform-origin: 0.4s linear;
+        }
+        .buy a:hover{
+            background: transparent;
+            border: 2px solid brown;
+        }
+        .middle{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .middle a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 2px;
+            background: brown;
+            border-radius: 2px;
+            transition: 0.4s linear;
+        }
+        .middle a:hover{
+            background: transparent;
+            border: 2px solid brown;
+        }
+        .middle span{
+            letter-spacing: 5px;
+        }
+        .middle h1{
+            font-size: 2.5em;
+          }
